@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="script/index.js"></script>
+</head>
+
+<body>
+    <nav class="mainNav">
+        <div class="hidden-btn" onclick="toggleMenu()">&#9776</div>
+        <ul class="mainNav-ul" id="mainNav-ul">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Subjects</a></li>
+            <li><a href="#">Schedule</a></li>
+            <li><a href="#">Registration</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="header">
+        <div class="header-welcome">
+            WELCOME ENGLISH CLUB !!!
+        </div>
+        <div class="header-btns">
+            <div class="header-btn header-btnL">LEARN MORE</div>
+            <div class="header-btn header-btnR">REGISTR NOW</div>
+        </div>
+    </header>
+
+    <section class="about">
+        <div class="about-L">
+            <p class="about-Left-p"> On March 14, 2017 the on the initiative of the Chair of Foreign Languages the official opening of the ENGLISH CLUB was held at the International Scientific-Educational Center of NAS RA. The English Club provides all the necessary conditions
+                to promote British culture transfer, to improve students’ speech culture and promote intercultural relations. Each course (which consists of 10-15 topics), is held only in English, is based on a special method, equipped with interactive
+                and rich materials and is aimed at the rapid development of spoken language. Each topic includes a thematic vocabulary, audio materials, film demonstration and discussions, interactive games. Club-level groups will operate in a wide selection
+                of schedule.
+            </p>
+        </div>
+        <div class="about-R">
+            <img class="about-Rigth-img" src="img/club-pic.jpg" alt="">
+        </div>
+    </section>
+
+    <section class="registration">
+        <div class="registration-info">
+            <h1 class="registration-info-h1">
+                HURRY UP AND REGISTER.
+            </h1>
+            <p class="registration-info-p">
+                Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores sit amet Lorem ispum dolores
+                sit amet
+            </p>
+        </div>
+        <div class="registration-form">
+            <input class="registration-flex-item" type="text" placeholder="Name" name="name">
+            <input class="registration-flex-item" type="text" placeholder="Last Name" name="lastName">
+            <input class="registration-flex-item" type="email" placeholder="Phone Number">
+            <input class="registration-flex-item" type="tel" name="tel" placeholder="Email Address">
+            <select class="registration-flex-item reg-select">
+                    <option value="">Lorem1</option>
+                    <option value="">Lorem2</option>
+                    <option value="">Lorem3</option>
+                </select>
+            <input class="registration-flex-item reg-btn" type="submit">
+        </div>
+    </section>
+
+    <footer>
+        <div id="map"></div>
+        <script src="script/index.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGe4yPouL5Ro9o96GpSj1s7WtIzAixzv0&callback=initMap">
+        </script>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    font-family: sans-serif;
+    line-height: 40px;
+}
+
+.mainNav {
+    display: -webkit-flex;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.mainNav-ul {
+    display: flex;
+    list-style: none;
+    margin: 2px 20px;
+}
+
+.mainNav li {
+    list-style: none;
+    margin: 2px 20px;
+    text-align: center;
+}
+
+.mainNav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    transition: all 0.4s ease-in-out;
+}
+
+.mainNav a:hover {
+    color: #337ab7;
+}
+
+.hidden-btn {
+    width: 100%;
+    background: black;
+    text-align: end;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+}
+
+@media screen and (max-width: 992px) {
+    .mainNav {
+        position: static;
+    }
+    .mainNav-ul.responsive {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .hidden-btn {
+        display: block;
+        font-size: 25px;
+        padding-right: 20px;
+        padding-top: 2px;
+    }
+}
+
+
+/* Header */
+
+.header {
+    background: url(bg-img/london.jpg) no-repeat fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-top: 3%;
+}
+
+.header-welcome {
+    font-size: 50px;
+    color: white;
+}
+
+.header-btns {
+    margin-top: 42px;
+    display: flex;
+}
+
+.header-btn {
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 20px;
+    margin-left: 40px;
+}
+
+.header-btnR {
+    background-color: #fd2d5c;
+    border-color: #fd2d5c;
+}
+
+@media screen and (max-width: 992px) {
+    .header-btnL {
+        display: none;
+    }
+    .header-btnR {
+        width: 100%;
+    }
+    .header-welcome {
+        font-size: 20px;
+    }
+    .header {
+        background-position: -191px -330px;
+        height: 44vh;
+    }
+}
+
+
+/* About */
+
+.about {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #fefefe;
+}
+
+.about-R {
+    flex: 0.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-R img {
+    width: 80%;
+    height: 90%;
+}
+
+.about-L {
+    flex: 0.5;
+    color: #4a474e;
+}
+
+@media only screen and (max-width: 992px) {
+    .about {
+        flex-direction: column;
+    }
+}
+
+
+/* Registration */
+
+.registration {
+    display: flex;
+    flex: 1;
+    background: url(bg-img/registration.jpg) no-repeat fixed;
+    background-size: cover;
+    align-items: center;
+    padding: 10px;
+}
+
+.registration-info {
+    box-sizing: border-box;
+    align-items: center;
+    flex: 6;
+    padding-left: 15px;
+    margin: auto;
+}
+
+.registration-info h1 {
+    font-size: 45px;
+}
+
+.registration-info p {
+    font-size: 17px;
+}
+
+.registration-form {
+    display: flex;
+    flex: 4;
+    flex-direction: column;
+    width: 100%;
+    align-items: right;
+}
+
+.registration-flex-item {
+    background: transparent;
+    border: 1px solid #fff;
+    color: white;
+    padding: 12px;
+    box-sizing: border-box;
+    margin: 7px 0px;
+    width: 100%;
+}
+
+.registration-flex-item::placeholder {
+    color: white;
+}
+
+.reg-btn {
+    width: 30%;
+    display: block;
+    margin: 0px auto;
+    padding: 1px unset;
+    border-radius: 22px;
+    border: none;
+    background: #fd2d5c;
+    cursor: pointer;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 992px) {
+    .registration {
+        flex-direction: column;
+    }
+    .registration-flex-item {
+        width: 100%;
+    }
+    .reg-btn {
+        width: 30%
+    }
+    .mainNav-ul {
+        display: none;
+    }
+    .about-R img {
+        width: 40%;
+    }
+    .about {
+        padding: 20px 0;
+    }
+}
+
+
+/* footer
+ */
+
+#map {
+    height: 55vh;
+}
+
+.map-control {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 2px rgba(33, 33, 33, 0.4);
+    font-family: 'Roboto', 'sans-serif';
+    margin: 10px;
+    display: none;
+}
+
+
+/* Display the control once it is inside the map. */
+
+#map .map-control {
+    display: block;
+}
+
+.selector-control {
+    font-size: 14px;
+    line-height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
